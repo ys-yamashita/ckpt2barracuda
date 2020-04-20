@@ -11,10 +11,10 @@ ML-Agentsで学習した*.cptkをUnityBarracudaの*.nnに変換
 
 ## example
 ```
-python cptk2barracuda.py -i model-1000.cptk -o output.nn
+python cptk2barracuda.py -i models/model-1000.cptk -o output.nn
 ```
 
 ## options
-* -i 入力フォルダ。checkpoint、model-STEP.cptk.data*、model-STEP.cptk.index、model-STEP.cptk.metaが含まれている必要あり
+* -i プレフィックス。.cptk.data*、.cptk.index、.cptk.metaが同じフォルダ階層にあること
 * -o 出力ファイル名
 
