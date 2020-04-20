@@ -1,8 +1,8 @@
 # cptk2barracuda
-Tensorflow saved model to unity barracuda .nn file. (*.ckptから*.nnに変換）
+Tensorflow saved model to unity barracuda .nn file. (*.cptkから*.nnに変換）
 
 ## summary
-ML-Agentsで学習した*.ckptをUnityBarracudaの*.nnに変換
+ML-Agentsで学習した*.cptkをUnityBarracudaの*.nnに変換
 
 ## required
 * python 3.6
