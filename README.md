@@ -18,3 +18,5 @@ python cptk2barracuda.py -i models/model-1000.cptk -o output.nn
 * -i プレフィックス。.cptk.data*、.cptk.index、.cptk.metaが同じフォルダ階層にあること
 * -o 出力ファイル名
 
+## Licence
+MIT
