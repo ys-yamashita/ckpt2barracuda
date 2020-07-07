@@ -10,7 +10,7 @@ from tensorflow.python.platform import gfile
 # parse argments
 ##########################################
 parser = argparse.ArgumentParser(prog='cptk2barracuda',usage='Tensorflow saved model to unity barracuda .nn file.')
-parser.add_argument('-i', '--input', help='Prefix input dir path.(*.ckpt)')
+parser.add_argument('-i', '--input', help='Prefix input file. (*.ckpt)')
 parser.add_argument('-o', '--output', help='Unity barracuda file path.(*.nn)')
 args = parser.parse_args()
 
@@ -28,7 +28,11 @@ with tf.compat.v1.Session(graph=graph) as sess:
     loader.restore(sess, args.input)
 
     # Create working directory
-    shutil.rmtree(workdir)
+    try:
+        shutil.rmtree(workdir)
+    except:
+        pass
+	
     os.mkdir(workdir)
 
     # Export checkpoint to SavedModel
@@ -52,5 +56,3 @@ with tf.compat.v1.Session(graph=graph) as sess:
 # to barracuda
 ##########################################
 tf2bc.convert(workdir + '/frozen_graph_def.pb', args.output)
-
-
