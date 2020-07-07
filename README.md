@@ -8,7 +8,7 @@ ML-Agentsで学習したチェックポイント(*.ckpt)をUnityBarracudaのニ�
 * ubuntu 18.04
 * python 3.6
 * ML-Agents 0.13.0と0.16.1で動作確認済み 
-* Tensorflow 2.1.0
+* Tensorflow 2.0.0と2.1.0で動作確認済み
 
 ## example
 ```
