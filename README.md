@@ -1,5 +1,5 @@
 # ckpt2barracuda
-Tensorflow saved model to unity barracuda .nn file. (*.ckptから*.nnに変換）
+Tensorflow saved checkpoint to unity barracuda .nn file. (*.ckptから*.nnに変換）
 
 ## summary
 ML-Agentsで学習したチェックポイント(*.ckpt)をUnityBarracudaのニューラルネットワークモデル(*.nn)に変換
