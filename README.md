@@ -1,4 +1,4 @@
-# cptk2barracuda
+# ckpt2barracuda
 Tensorflow saved model to unity barracuda .nn file. (*.ckptから*.nnに変換）
 
 ## summary
